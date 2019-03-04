@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4D73A3CA-6FCC-3705-31CE-5B07562A5E4C}</ProjectGuid>
+    <ProjectGuid>{7DF4D572-52E1-08B3-796F-BF416D17A6EE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,16 +67,6 @@
     <Compile Include="Assets\Resources\Scripts\AudioManager\ReadOnlyAttribute.cs" />
     <Compile Include="Assets\Resources\Scripts\AudioManager\Sound.cs" />
     <Compile Include="Assets\Resources\Scripts\BlendShape.cs" />
-    <Compile Include="Assets\Resources\Scripts\CavitationModule\CavitationUtility.cs" />
-    <Compile Include="Assets\Resources\Scripts\CavitationModule\Stories\Explore.cs" />
-    <Compile Include="Assets\Resources\Scripts\CavitationModule\Stories\HighDischarge.cs" />
-    <Compile Include="Assets\Resources\Scripts\CavitationModule\Stories\LowSuction.cs" />
-    <Compile Include="Assets\Resources\Scripts\CavitationModule\Stories\NormalOperation.cs" />
-    <Compile Include="Assets\Resources\Scripts\CavitationModule\Stories\Recirculation.cs" />
-    <Compile Include="Assets\Resources\Scripts\CavitationModule\UI Related\DemoFingerAnimation.cs" />
-    <Compile Include="Assets\Resources\Scripts\CavitationModule\UI Related\DemoSliderEvent.cs" />
-    <Compile Include="Assets\Resources\Scripts\CavitationModule\UI Related\SliderCompletionChecker.cs" />
-    <Compile Include="Assets\Resources\Scripts\CavitationModule\UI Related\SliderUpdate.cs" />
     <Compile Include="Assets\Resources\Scripts\EventManager.cs" />
     <Compile Include="Assets\Resources\Scripts\FindAllScripts.cs" />
     <Compile Include="Assets\Resources\Scripts\Flow.cs" />
@@ -85,18 +75,11 @@
     <Compile Include="Assets\Resources\Scripts\GaugeHighlighter.cs" />
     <Compile Include="Assets\Resources\Scripts\GlobalFunctions.cs" />
     <Compile Include="Assets\Resources\Scripts\LabelKeeper.cs" />
-    <Compile Include="Assets\Resources\Scripts\LOTO\LOTOPumpStory.cs" />
-    <Compile Include="Assets\Resources\Scripts\LOTO\LOTOValveStory.cs" />
     <Compile Include="Assets\Resources\Scripts\Main Menu\GifPlayer.cs" />
     <Compile Include="Assets\Resources\Scripts\Main Menu\MenuManager.cs" />
-    <Compile Include="Assets\Resources\Scripts\Maintenance\MaintenanceMenuManager.cs" />
-    <Compile Include="Assets\Resources\Scripts\Maintenance\MaintenanceStory.cs" />
-    <Compile Include="Assets\Resources\Scripts\Maintenance\MaintScenarioStory.cs" />
-    <Compile Include="Assets\Resources\Scripts\Maintenance\MotorCollisionBool.cs" />
     <Compile Include="Assets\Resources\Scripts\MovementManager.cs" />
     <Compile Include="Assets\Resources\Scripts\MySceneLoader.cs" />
     <Compile Include="Assets\Resources\Scripts\PartID.cs" />
-    <Compile Include="Assets\Resources\Scripts\PPE\PPEStory.cs" />
     <Compile Include="Assets\Resources\Scripts\QRLink.cs" />
     <Compile Include="Assets\Resources\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Resources\Scripts\SludgeJudgeScenario.cs" />
@@ -146,6 +129,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
     <None Include="Assets\Resources\Ultra Skybox Fog\Shaders\UltraSkyboxFog.shader" />
+    <None Include="Assets\Resources\Models\MainTank\YellowEffectFlash.shader" />
     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
@@ -183,19 +167,19 @@
     <None Include="Assets\StreamingAssets\Vuforia\EONMarker.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/student/Desktop/WaterSampling/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/student/Documents/GitHub/EONWaterProject/WaterProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/student/Desktop/WaterSampling/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/student/Documents/GitHub/EONWaterProject/WaterProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/student/Desktop/WaterSampling/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/student/Documents/GitHub/EONWaterProject/WaterProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/student/Desktop/WaterSampling/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/student/Documents/GitHub/EONWaterProject/WaterProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/student/Desktop/WaterSampling/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/student/Documents/GitHub/EONWaterProject/WaterProject/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -399,13 +383,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/student/Desktop/WaterSampling/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/student/Documents/GitHub/EONWaterProject/WaterProject/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/student/Desktop/WaterSampling/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/student/Documents/GitHub/EONWaterProject/WaterProject/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/student/Desktop/WaterSampling/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/student/Documents/GitHub/EONWaterProject/WaterProject/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -755,11 +739,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VuforiaScripts.csproj">
-      <Project>{ADB3CD04-DF1C-9752-DB2A-F801699F449B}</Project>
+      <Project>{E6B965F7-5C42-8A53-205C-EA25956FA0C9}</Project>
       <Name>VuforiaScripts</Name>
     </ProjectReference>
     <ProjectReference Include="VuforiaEditorScripts.csproj">
-      <Project>{E7765064-7A72-5D59-6206-5B0E44CC5B9B}</Project>
+      <Project>{75028039-CB42-B02B-2998-B707C5D39273}</Project>
       <Name>VuforiaEditorScripts</Name>
     </ProjectReference>
   </ItemGroup>
